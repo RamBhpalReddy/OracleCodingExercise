@@ -25,7 +25,7 @@ public class CustomerDataServiceImpl implements CustomerDataService{
 
 		Map<String, Integer> noofCustIdforContractId = new HashMap<>();
 		groupByContractIDs.forEach((k, v) -> {
-			noofCustIdforContractId.put(k, v.stream().map(p -> p.getCustomerId()).collect(Collectors.toList()).size());
+			noofCustIdforContractId.put(k, v.stream().map(p -> p.getCustomerId()).collect(Collectors.toSet()).size());
 		});
 		return noofCustIdforContractId;
 	}
@@ -34,7 +34,7 @@ public class CustomerDataServiceImpl implements CustomerDataService{
 	public Map<String, Integer> getNoOfCustIdForEachGeoZone() {
 		Map<String, Integer> noofCustIdforGeoZone = new HashMap<>();
 		groupByGeoZone().forEach((k, v) -> {
-			noofCustIdforGeoZone.put(k, v.stream().map(p -> p.getCustomerId()).collect(Collectors.toList()).size());
+			noofCustIdforGeoZone.put(k, v.stream().map(p -> p.getCustomerId()).collect(Collectors.toSet()).size());
 		});
 		return noofCustIdforGeoZone;
 	}
