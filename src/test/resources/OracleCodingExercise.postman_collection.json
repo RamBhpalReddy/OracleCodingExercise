@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "31062e60-f697-4191-9870-8ee0790c9595",
+		"name": "OracleCodingExercise",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "noofUniqueCustIdForEachContractId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customerData/noofUniqueCustIdForEachContractId",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerData",
+						"noofUniqueCustIdForEachContractId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "noofUniqueCustIdForEachGeoZone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customerData/noofUniqueCustIdForEachGeoZone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerData",
+						"noofUniqueCustIdForEachGeoZone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustIdsForEachGeoZone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customerData/getCustIdsForEachGeoZone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerData",
+						"getCustIdsForEachGeoZone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "aveBuildDurationForEachGeoZone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customerData/aveBuildDurationForEachGeoZone",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customerData",
+						"aveBuildDurationForEachGeoZone"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
